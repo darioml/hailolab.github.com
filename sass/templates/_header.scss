@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    margin-bottom: 24px;
+    @include inline-block;
+    width: 100%;
+    vertical-align: top;
+    
+    h2, p {
+        @include inline-block;
+    }
+    
+    h2 {
+        padding-left: 15px;
+    }
+}
+
+.logo-outer {
+    @include size(100px, 100px);
+    @include inline-block;
+}
+
+.logo {
+    @include size(100px, 100px);
+    @include inline-block;
+    vertical-align: middle;
+    background: url(images/logo-flat.png) 0 0 no-repeat;
+}

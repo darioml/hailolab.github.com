@@ -1,20 +1,89 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-    <meta charset=utf-8>
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen, projection" />
+<html dir="ltr" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name = "viewport" content="width=device-width,initial-scale = 1.0, user-scalable = yes">
+        <meta name="robots" content="index, follow">
+        <meta name = "keywords" content ="Black Cab App, The Black Cab App, Black Taxi App, London Cab App, London Taxi App, App for London Taxis, App for London Cabs, iPhone App Black Cabs, Hailo, Hale o, Hail O, Hail a Taxi App, Black Cab App" />
+        <meta name = "description" content ="HAILO. The Black Cab App. Use Hailo to get a black cab wherever you are, whenever you want. All it takes is two taps on your iPhone or Android Phone. Pay card or cash and get an email receipt instantly." />
+        <meta property="og:image" content="https://www.hailocab.com/files/feature3b-london-667090675.png"/>
+        <title>HAILO Labs. We're gonna need a bigger boat.</title>
+        <link rel="stylesheet" href="//fast.fonts.com/cssapi/d186c118-210e-4020-a190-152e3bd705f4.css"/>
+        <link rel="stylesheet" media="all" href="styles.css" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+    </head>
+    <body>
+        <div class="page">
+            <div class="page-width">
+                <div class="header">
+                    <div class="logo-outer">
+                        <a href="https://www.hailocab.com/" class="logo"></a>
+                    </div>
+                    <h2>HAILO Labs.</h2>
+                    <p>We're gonna need a bigger boat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="page-width">
+                <div class="container__inner">
+                        <h1>{{page.title}}</h1>
+                        {{content}}
+                        <ul class="posts">
+                            {% for post in site.posts %}
+                                <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__inner">
+                <ul class="menu">
+                    <li class="current">
+                        <a href="https://www.hailocab.com/" target="_self">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.hailocab.com/about" target="_self">About Us</a>
+                    </li>
+                    <li class="link-blog ">
+                        <a href="https://www.hailocab.com/blog" target="_self">Blog</a>
+                    </li>
+                    <li class="link-press ">
+                        <a href="https://www.hailocab.com/press" target="_self">Press</a>
+                    </li>
+                    <li class="">
+                        <a href="http://support.hailocab.com/?city=london&amp;type=passenger">Help</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.hailocab.com/contact" target="_self">Contact</a>
+                    </li>
+                    <li class="menu-link-drivers hidden-all-but-mobile ">
+                        <a href="https://www.hailocab.com/drivers" target="_self">Taxi Driver?</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <ul class="menu">
+                        <li>&copy; 2013 Hailo - All Rights Reserved.</li>
+                        <li>
+                            <a href="https://www.hailocab.com/terms" target="_self">Terms &amp; Conditions</a>
+                        </li>
 
-    <meta property=og:title content="Hailo Labs">
-    <meta property=og:type content=company>
-    <meta property=og:url content="http://labs.hailocab.com">
-    <meta property=og:site_name content="Hailo Labs">
-    <meta property=og:description content="Hailo Labs">
-    <meta property=fb:admins content=197812744>
-</head>
-<body>
+                        <li>
+                            <a href="https://www.hailocab.com/privacy-policy" target="_self">Privacy Policy</a>
+                        </li>
 
- {{ content }}
-
-</body>
+                        <li>
+                            <a href="http://jobs.hailocab.com" target="_self">We&#039;re Hiring</a>
+                        </li>
+                   </ul>
+                   <p class="apple-attribution">iPhone is a trademark of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
