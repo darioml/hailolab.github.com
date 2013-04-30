@@ -12,7 +12,7 @@ body {
 .page-width {
     margin-left: auto;
     margin-right: auto;
-    width: 940px;
+    width: 50%;
 }
 
 .page-width:after {
@@ -21,4 +21,5 @@ body {
 
 .container__inner {
     margin-left: 120px;
+    width: 60%;
 }

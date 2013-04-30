@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-        <meta charset=utf-8>
-        <title>{{ page.title }}</title>
-
+        <meta charset="utf-8">
+        <title>HAILO Labs - {{ page.title }}</title>
         <link rel="stylesheet" href="//fast.fonts.com/cssapi/d186c118-210e-4020-a190-152e3bd705f4.css"/>
         <link rel="stylesheet" media="all" href="styles.css" />
-
-        <meta property=og:title content="Hailo Labs">
-        <meta property=og:type content=company>
-        <meta property=og:url content="http://labs.hailocab.com">
-        <meta property=og:site_name content="Hailo Labs">
-        <meta property=og:description content="Hailo Labs">
-        <meta property=fb:admins content=197812744>
+        <meta property="og:title" content="Hailo Labs">
+        <meta property="og:type" content=company>
+        <meta property="og:url" content="http://labs.hailocab.com">
+        <meta property="og:site_name" content="Hailo Labs">
+        <meta property="og:description" content="Hailo Labs">
+        <meta property="fb:admins" content="197812744">
     </head>
     <body>
         <div class="page">
             <div class="page-width">
                 <div class="header">
                     <div class="logo-outer">
-                        <a href="https://www.hailocab.com/" class="logo"></a>
+                        <a href="/" class="logo"></a>
                     </div>
                     <h2>HAILO Labs.</h2>
                     <p>We're gonna need a bigger boat.</p>
@@ -28,56 +26,44 @@
         </div>
         <div class="container">
             <div class="page-width">
+                <div class="sidebar">
+                    <ul class="posts">
+                        {% for post in site.posts %}
+                            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
                 <div class="container__inner">
-                        <h1>{{page.title}}</h1>
-                        {{content}}
-                        <ul class="posts">
-                            {% for post in site.posts %}
-                                <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-                            {% endfor %}
-                        </ul>
+                    <h1>{{page.title}}</h1>
+                    {{content}}
                 </div>
             </div>
         </div>
         <footer class="footer">
             <div class="footer__inner">
                 <ul class="menu">
-                    <li class="current">
-                        <a href="https://www.hailocab.com/" target="_self">Home</a>
+                    <li>
+                        <a href="/team" target="_self">Team</a>
                     </li>
-                    <li class="">
-                        <a href="https://www.hailocab.com/about" target="_self">About Us</a>
+                    <li>
+                        <a href="/" target="_self">Blog</a>
                     </li>
-                    <li class="link-blog ">
-                        <a href="https://www.hailocab.com/blog" target="_self">Blog</a>
+                    <li>
+                        <a href="/talks" target="_self">Talks</a>
                     </li>
-                    <li class="link-press ">
-                        <a href="https://www.hailocab.com/press" target="_self">Press</a>
+                    <li>
+                        <a href="https://github.com/hailolab">Github</a>
                     </li>
-                    <li class="">
-                        <a href="http://support.hailocab.com/?city=london&amp;type=passenger">Help</a>
+                    <li>
+                        <a href="https://twitter.com/HailoLabs" target="_self">Twitter</a>
                     </li>
-                    <li class="">
-                        <a href="https://www.hailocab.com/contact" target="_self">Contact</a>
-                    </li>
-                    <li class="menu-link-drivers hidden-all-but-mobile ">
-                        <a href="https://www.hailocab.com/drivers" target="_self">Taxi Driver?</a>
+                    <li>
+                        <a href="http://jobs.hailocab.com" target="_self">Jobs</a>
                     </li>
                 </ul>
                 <div class="copyright">
                     <ul class="menu">
                         <li>&copy; 2013 Hailo - All Rights Reserved.</li>
-                        <li>
-                            <a href="https://www.hailocab.com/terms" target="_self">Terms &amp; Conditions</a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.hailocab.com/privacy-policy" target="_self">Privacy Policy</a>
-                        </li>
-
-                        <li>
-                            <a href="http://jobs.hailocab.com" target="_self">We&#039;re Hiring</a>
-                        </li>
                    </ul>
                 </div>
             </div>
