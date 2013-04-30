@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Keep Kalman and Carry On
+title: Hailo Labs - Keep Kalman and Carry On
 ---
 
-Hello World!
+Welcome to Hailo Labs - more info coming soon
