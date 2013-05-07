@@ -54,7 +54,6 @@ a {
 
 html, body {
   background-color: #fbfbfb;
-  display: table;
   height: 100%;
   width: 100%; }
 
@@ -103,8 +102,7 @@ html, body {
 .footer {
   background: #fafafa;
   width: 100%;
-  display: table-row;
-  *display: block;
+  display: block;
   height: 1px;
   overflow: hidden; }
 
