@@ -1,6 +1,3 @@
 ---
-layout: default
-title: Keep Kalman Carry On
+layout: homepage
 ---
-
-Welcome to Hailo Labs - more info coming soon
