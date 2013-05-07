@@ -52,7 +52,7 @@ table {
 a {
   outline: none; }
 
-body {
+html, body {
   background-color: #fbfbfb;
   display: table;
   height: 100%;
@@ -76,10 +76,6 @@ body {
 .header {
   position: relative;
   margin-bottom: 24px;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  width: 100%;
   vertical-align: top; }
   .header h2, .header p {
     display: inline-block;
@@ -110,7 +106,6 @@ body {
   display: table-row;
   *display: block;
   height: 1px;
-  *height: auto;
   overflow: hidden; }
 
 .footer .copyright {
@@ -185,6 +180,19 @@ body {
 
 .copyright .menu {
   border: none; }
+
+/* Sticky footer */
+.page {
+  min-height: 100%; }
+
+.container {
+  overflow: auto;
+  padding-bottom: 180px; }
+
+.footer {
+  position: relative;
+  margin-top: -180px;
+  height: 180px; }
 
 .sidebar {
   float: right; }

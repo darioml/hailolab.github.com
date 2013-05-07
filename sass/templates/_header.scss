@@ -1,8 +1,6 @@
 .header {
     position: relative;
     margin-bottom: 24px;
-    @include inline-block;
-    width: 100%;
     vertical-align: top;
     
     h2, p {
