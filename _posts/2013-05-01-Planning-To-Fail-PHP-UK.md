@@ -1,0 +1,13 @@
+---
+layout: default
+title: Planning To Fail At PHP UK
+author: Dave Gardner
+category: talks
+---
+I spoke at [PHP UK Conference](http://phpconference.co.uk) in February on "Planning To Fail". The video and slides are below.
+
+>Looking at how to build highly available systems in PHP by planning to fail. This talk will offer a number of heuristics that will help you build highly available systems including choosing technologies, software design patterns and failure simulations.
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/hHwNEuTu6rQ" frameborder="0" allowfullscreen="allowfullscreen">  </iframe>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/16721016" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="allowfullscreen"> </iframe> 
