@@ -26,6 +26,7 @@
                     <h2>HAILO Labs.</h2>
                     <p>We're gonna need a bigger boat.</p>
                 </div>
+                {% if page.url != "/talks/index.html" and page.url != "/team/index.html" %}
                 <div class="sidebar">
                     <ul class="posts">
                         {% for post in site.posts %}
@@ -33,6 +34,7 @@
                         {% endfor %}
                     </ul>
                 </div>
+                {% endif %}
                 <div class="container__inner">
                     <h1>{{page.title}}</h1>
                     <h3>{{page.author}}</h3>
