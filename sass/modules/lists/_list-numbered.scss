@@ -1,0 +1,23 @@
+ol.numbered {
+  padding: 0;
+  margin: 0;
+}
+ol.numbered li{
+  list-style-type: none;
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 15px;
+}
+ol.numbered li span {
+  width: 30px;
+  height: 30px;
+  background: url(../../../images/icons/icon-number.png) 0 0 no-repeat;
+  margin-right: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+}

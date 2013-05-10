@@ -1,0 +1,329 @@
+/* ==========================================================================
+	 $TYPOGRAPHY
+   ========================================================================== */
+
+body {
+	font-family: $helvetica;
+	line-height: 1.6;
+	font-size: 16px;
+	color: $text-color;
+}
+
+@include breakpoint(narrow) {
+	body {
+		font-size: 14px;
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+
+}
+
+img {
+
+}
+
+.alignleft {
+	float: left;
+	margin-right: 20px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 20px;
+}
+
+.alignleft,
+.alignright {
+	padding-top: 5px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.strong-alt {
+	color: $hailo-yellow;
+}
+
+small {
+	font-size: 12px;
+}
+
+.muted {
+	color: #999999;
+}
+
+p {
+	margin: 10px 0;
+}
+
+.page-intro {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+blockquote {
+	margin: $default-v-margin 30px;
+}
+
+blockquote cite {
+
+}
+
+blockquote small {
+	color: #999999;
+	display: block;
+	line-height: 20px;
+	font-size: 80%;
+}
+
+hr {
+	display: block;
+	clear: both;
+	opacity: 0.1;
+	margin-top: 28px;
+	margin-bottom: 25px;
+}
+
+/* <headings> */
+
+h1 {
+	font-size: 18px;
+	font-family: $helvetica;
+	margin: 0 0 15px;
+	line-height: 1.2;
+	font-weight: bold;
+}
+
+h1 strong,
+h2 strong {
+	font-weight: normal;
+}
+
+@include breakpoint(narrow) {
+	h1 {
+		font-size: 15px;
+	}
+}
+
+h2 {
+	font-size: 24px;
+	font-family: $trade-gothic;
+	margin: $default-v-margin 0;
+}
+
+h2 strong {
+	font-family: $trade-gothic-bold;
+}
+
+@include breakpoint(narrow) {
+	h2 {
+		font-size: 20px;
+		margin-bottom: 15px;
+		margin-top: $default-v-margin/2;
+	}
+}
+
+h3 {
+	font-size: 18px;
+}
+
+@include breakpoint(narrow) {
+  h3 {
+    font-size: 16px;
+  }
+}
+
+.heading-alt {
+	text-align: center;
+	font-family: $trade-gothic-bold;
+	font-weight: normal;
+	font-size: 14px;
+	color: #666666;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+@include breakpoint(narrow) {
+  h4 {
+    font-size: 14px;
+  }
+}
+
+h5 {
+	font-size: 15px;
+}
+
+@include breakpoint(narrow) {
+  h5 {
+    font-size: 14px;
+  }
+}
+
+h6 {
+	font-size: 14px;
+}
+
+h2,
+h2 a,
+h3,
+h3 a,
+h6,
+h6 a {
+	color: $alt-heading-color;
+}
+
+h1,
+h1 a,
+h4,
+h4 a,
+h5,
+h5 a {
+	color: $main-heading-color;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	margin: $default-v-margin 0 $default-v-margin/2;
+}
+
+.heading-twitter {
+	background: url("../../../images/icons/icon-twitter.png") no-repeat scroll 0 0 transparent;
+	border: 0 none;
+	line-height: 40px;
+	padding-left: 48px;
+}
+
+/* </headings> */
+
+/* <lists> */
+
+ul {
+
+}
+
+ol {
+
+}
+
+ul,
+ol {
+	margin: 0 0 $default-v-margin 25px;
+	padding: 0;
+}
+
+ul ul, 
+ul ol, 
+ol ol, 
+ol ul {
+	margin-bottom: 0;
+}
+
+li {
+
+}
+
+ul li {
+
+}
+
+ol li {
+
+}
+
+ul li,
+ol li {
+	
+}
+
+.list-unstyled,
+.list-reset {
+	margin-left: 0;
+}
+
+.list-unstyled,
+.list-simple,
+.list-reset {
+	list-style: none;
+}
+
+.list-reset {
+	margin-bottom: 0;
+}
+
+.list-reset li {
+	margin-bottom: 0;
+}
+
+.list-multiline li {
+	margin-bottom: 10px;
+}
+
+.list-multiline ul,
+.list-multiline ol {
+	margin-top: 10px;
+}
+
+/* </lists> */
+
+/* <tables> */
+
+table {
+	margin-bottom: $default-v-margin;
+}
+
+table td,
+table th {
+	padding: 5px 10px;
+}
+
+table td:first-child,
+table th:first-child {
+	padding-left: 0;
+}
+
+table th {
+	color: $alt-heading-color;
+	font-weight: bold;
+}
+
+/* </tables> */
+

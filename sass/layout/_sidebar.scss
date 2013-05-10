@@ -1,0 +1,22 @@
+.list-side li {
+	margin-bottom: 15px;
+}
+
+.content-side {
+	margin-left: 10px;	
+}
+
+.sidebar__inner {
+	margin-top: 50px;
+}
+
+@include breakpoint(narrow) {
+	.sidebar {
+		margin-top: 0;
+	}
+
+	.sidebar__inner {
+		margin-top: 60px;
+		border-top: 1px solid #CBCBCB;
+	}
+}

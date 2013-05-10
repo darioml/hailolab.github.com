@@ -17,57 +17,87 @@
         <meta property="fb:admins" content="197812744">
     </head>
     <body>
-        <div class="page">
-            <div class="container page-width">
-                <div class="header">
-                    <div class="logo-outer">
-                        <a href="/" class="logo"></a>
+        <div class="page page--2col">
+            <header class="header ">
+                <div class="menu-main-wrapper"></div>
+                <div class="page-width">
+                    <div class="header__inner">
+                        <div class="logo-outer">
+                            <a href="/" class="logo logo--small">HAILO Labs.</a>
+                        </div>
+                        <nav class="menu-main">
+                            <ul class="menu-main__list list-unstyled">
+                                <li class="menu-main__item">
+                                    <a class="menu-main__link" href="/team/" target="_self">Team</a>
+                                </li>
+                                <li class="menu-main__item">
+                                    <a class="menu-main__link" href="/talks/" target="_self">Talks</a>
+                                </li>
+                                <li class="menu-main__item">
+                                    <a class="menu-main__link" href="/" target="_self">Blog</a>
+                                </li>
+                                <li class="menu-main__item">
+                                    <a class="menu-main__link" href="https://github.com/hailolab/">Github</a>
+                                </li>
+                                <li class="menu-main__item">
+                                    <a class="menu-main__link" href="https://www.twitter.com/HailoLabs" target="_self">Twitter</a>
+                                </li>
+                                <li class="menu-main__item">
+                                    <a class="menu-main__link" href="http://jobs.hailocab.com" target="_self">Jobs</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <h2>HAILO Labs.</h2>
-                    <p>We're gonna need a bigger boat.</p>
                 </div>
-                {% if page.url != "/talks/index.html" and page.url != "/team/index.html" %}
-                <div class="sidebar">
-                    <ul class="posts">
-                        {% for post in site.posts %}
-                            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-                        {% endfor %}
+            </header>
+            <div class="container">
+                <div class="page-width">
+                    <div class="container__inner">
+                        <div class="grid--rev">
+                            <div class="grid__item three-quarters palm--one-whole main-content">
+                                <div class="main-content__inner">
+                                    <div class="page-section">
+                                        <article>
+                                            <h1>{{page.title}}</h1>
+                                            <h3>{{page.author}}</h3>
+                                            {{content}}
+                                        </article>
+                                    </div>
+                                </div>
+                            </div><div class="grid__item  one-quarter palm--one-whole sidebar">
+                                {% if page.url != "/talks/index.html" and page.url != "/team/index.html" %}
+                                <aside class="sidebar__inner">
+                                    <section class="box-side hidden-mobile">
+                                        <div class="box-side-inner">
+                                            <div class="box-side-inner-inner">
+                                                <div class="sidebar">
+                                                    <ul class="menu-side list-unstyled">
+                                                        {% for post in site.posts %}
+                                                            <li class="menu-side__item">
+                                                                <span><a class="menu_side__link" href="{{ post.url }}">{{ post.title }}</a>
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </aside>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="copyright">
+                    <ul id="menu-footer-links" class="menu">
+                        <li>&copy; 2013 Hailo - All Rights Reserved.</li>
                     </ul>
                 </div>
-                {% endif %}
-                <div class="container__inner">
-                    <h1>{{page.title}}</h1>
-                    <h3>{{page.author}}</h3>
-                    {{content}}
-                </div>
             </div>
-        </div>
-        <div class="footer page-width">
-            <ul class="menu">
-                <li>
-                    <a href="/team" target="_self">Team</a>
-                </li>
-                <li>
-                    <a href="/" target="_self">Blog</a>
-                </li>
-                <li>
-                    <a href="/talks" target="_self">Talks</a>
-                </li>
-                <li>
-                    <a href="https://github.com/hailolab">Github</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/HailoLabs" target="_self">Twitter</a>
-                </li>
-                <li>
-                    <a href="http://jobs.hailocab.com" target="_self">Jobs</a>
-                </li>
-            </ul>
-            <div class="copyright">
-                <ul class="menu">
-                    <li>&copy; 2013 Hailo - All Rights Reserved.</li>
-               </ul>
-            </div>
-        </div>
+        </footer>
     </body>
 </html>

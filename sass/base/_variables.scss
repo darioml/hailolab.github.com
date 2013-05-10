@@ -41,3 +41,8 @@ $main-box-bg-color: #F0F1F1;
 /* <margins> */
 
 $default-v-margin: 20px;
+
+$lap-start: 761px;
+$desk-start: 1021px;
+$palm-end: $lap-start - 1px;
+$lap-end: $desk-start - 1px;

@@ -1,0 +1,73 @@
+.header {
+	position: relative;
+	margin-bottom: 24px;
+}
+
+.header--drivers {
+	margin-bottom: 10px;
+}
+
+.header__inner {
+	position: relative;
+	@include inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.header__btn-group {
+	float: right;
+	position: relative;
+	margin-bottom: 15px;
+	top: -4px;
+}
+
+.header__side {
+	float: right;
+	margin-top: 34px;
+	position: relative;
+}
+
+.header__menu-lang {
+	text-align: right;
+}
+
+.header__city-selector {
+    margin-left: 20px;
+    position: relative;
+    top: -4px;
+    vertical-align: middle;
+}
+
+.header__city-selector2 {
+	float: right;
+	margin-bottom: 8px;
+}
+
+.header_link-taxi-driver {
+    left: 90px;
+    position: absolute;
+    top: 10px;	
+}
+
+.lang-ja .header_link-taxi-driver {
+	left: 65px;
+	font-size: 11px;
+}
+
+@include breakpoint(medium) {
+	.header__btn-group {
+		position: relative;
+	}
+}
+
+@include breakpoint(medium) {
+
+}
+
+@include breakpoint(narrow) {
+	
+	.header {
+		position: relative;
+		margin-bottom: 25px;
+	}
+}

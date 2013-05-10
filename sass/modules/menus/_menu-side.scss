@@ -1,0 +1,42 @@
+.menu-side {
+
+}
+
+.menu-side__item {
+	margin-bottom: 25px;
+}
+
+.menu-side__link {
+	font-weight: bold;
+}
+
+.menu-side__item.current {
+	background: url(../../../images/arrows/arrow-right.png) no-repeat scroll 97% center transparent;
+}
+
+.menu-side__item.current a {
+	color: #000333;
+}
+
+@include breakpoint(narrow) {
+	
+	.menu-side {
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	.menu-side__item {
+		border-bottom: 1px solid #EFEFEF;
+		margin: 0;
+		padding: 10px 0;
+		
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.menu-side__item.current {
+		display: none;
+	}
+
+}

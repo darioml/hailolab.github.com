@@ -1,0 +1,39 @@
+/* Responsive video
+
+Example usage:
+
+<div class="video-wrapper">
+	<div class="video-container">
+		<iframe src="http://player.vimeo.com/video/6284199?title=0&byline=0&portrait=0" width="800" height="450" frameborder="0"></iframe>
+	</div>
+</div>
+
+*/
+
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+.video-wrapper {
+	max-width: 100%;
+	/* put width here if need to restrict */
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

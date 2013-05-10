@@ -1,0 +1,22 @@
+@mixin gradient($startPosition, $startColor, $endColor) {
+
+	background: $startColor;
+
+	@if $startPosition == top {
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}')";		
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}'); /* IE6–IE9 */
+		background: -webkit-gradient(linear, center top, center bottom, from($startColor), to($endColor)); /* Saf4+, Chrome */    
+	}	
+
+	@if $startPosition == left {
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}')";		
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}'); /* IE6–IE9 */
+		background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor)); /* Saf4+, Chrome */    
+	}
+
+	background: -webkit-linear-gradient($startPosition, $startColor, $endColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background: -moz-linear-gradient($startPosition, $startColor, $endColor); /* FF3.6+ */
+	background: -o-linear-gradient($startPosition, $startColor, $endColor); /* Opera 11.10+ */
+	background: -ms-linear-gradient($startPosition, $startColor, $endColor); /* IE10 */
+	background: linear-gradient($startPosition, $startColor, $endColor);
+}

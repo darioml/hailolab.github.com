@@ -1,0 +1,26 @@
+* {
+	@include vendor(box-sizing, border-box);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+
+}
+
+body {
+	background-color: #fbfbfb;
+	display: table;
+	height: 100%;
+	width: 100%;
+	//overflow-x: hidden; //form error messages fix
+}
+
+@include breakpoint(narrow) {
+	body {
+		//overflow-x: auto;
+	}
+}
