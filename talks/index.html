@@ -1,0 +1,15 @@
+---
+layout: default
+title: Talks
+---
+
+<h1>Recent Talks</h1>
+{% for post in site.categories.talks %}
+    <a href="{{ post.url }}"><div class="home-post">
+        <img src="{{ post.image }}"/>
+        <h2>{{ post.title }}</h2>
+        <div class="author">{{ post.github }} in talks</div>
+        <div class="content"><p>{{ post.tagline }}</p></div>
+        <br style="clear:both;">
+    </div></a>
+{% endfor %}

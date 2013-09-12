@@ -1,0 +1,19 @@
+---
+layout: default
+title: Team
+---
+
+<h2>The Hailo Team</h2>
+
+<p>
+Hailo's engineering team has offices in London and New York City. We work on client apps for iOS Android and the web, API's and data services, and infrastructure and systems administration (and blog about the interesting bits). We like pizza, long walks on the beach, distributed fault tolerant systems, and whisky. Beware the nerf guns. 
+</p>
+
+<script>$(document).ready(function(){
+    $.getJSON("https://api.github.com/orgs/hailocab/members", function(data) {
+        $("#content").append('<p class="team-pics">');
+        $(data).each(function(i){
+            $("#content p.team-pics").append('<a href="' + this.html_url + '"><img src="' + this.avatar_url + '" title="' + this.login + '" width="80" height="80" /></a>');
+        });
+    });
+});</script>
