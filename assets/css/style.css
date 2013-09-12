@@ -14,6 +14,7 @@ footer {
   text-align: center; }
 
 #container {
+  clear: both;
   margin-left: 145px; }
 
 #content {
@@ -51,42 +52,34 @@ footer {
 
 nav.site-nav {
   background: #fff;
-  padding: 50px;
-  box-shadow: inset -4px 0 5px -5px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  bottom: 0; }
+  box-shadow: inset -4px 0 5px -5px rgba(0, 0, 0, 0.2); }
   nav.site-nav ul {
-    width: 45px;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    list-style-type: none; }
     nav.site-nav ul li {
-      padding: 0;
-      margin: 0;
-      min-height: 45px;
-      width: 45px;
-      margin-bottom: 50px; }
-      nav.site-nav ul li:first-child a.pure-button {
-        opacity: 1;
-        left: 0px; }
+      display: inline; }
+      nav.site-nav ul li > div {
+        float: left;
+        padding-left: 15px;
+        padding-top: 10px;
+        width: 50px;
+        height: 50px; }
       nav.site-nav ul li a.pure-button {
-        position: relative;
-        left: -50px;
-        opacity: 0;
-        transition: .1s linear;
         padding: 0;
-        background-color: rgba(240, 240, 240, 0.8);
-        color: #555;
-        border-radius: 0;
-        box-shadow: inset 0 0 2px 0 rgba(200, 200, 200, 0.5), 0 0 1px 0 rgba(100, 100, 100, 0);
-        min-height: 45px;
-        width: 45px;
-        line-height: 45px;
-        overflow: hidden;
-        font-size: 25px; }
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        line-height: 50px;
+        transition: .1s linear; }
         nav.site-nav ul li a.pure-button.home-button {
-          background: rgba(240, 240, 240, 0.8) url("/assets/img/hailo_icon_Hailo+Icon.svg") no-repeat center center;
+          background-image: url("/assets/img/hailo_icon_Hailo+Icon.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
           background-size: 28px 28px; }
+          nav.site-nav ul li a.pure-button.home-button img {
+            max-width: 30px;
+            max-height: 30px; }
         nav.site-nav ul li a.pure-button.sub-button:hover {
           text-decoration: none;
           background-image: none;
