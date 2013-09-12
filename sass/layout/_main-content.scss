@@ -1,9 +1,0 @@
-.main-content__inner {
-	margin-left: 10px;
-}
-
-@include breakpoint(narrow) {
-	.main-content__inner {
-		margin-left: 0;
-	}
-}

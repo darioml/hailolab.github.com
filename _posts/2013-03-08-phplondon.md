@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Deploying Distributed Systems At PHP London
-author: Matt Heath
+title: Deploying Distributed Systems
+tagline: Talking at PHP London on how to deploy distributed systems
+github: mattheath
+image: https://2.gravatar.com/avatar/67f4a8f2a209a38d7242829947b26ba3?d=https%3A%2F%2Fidenticons.github.com%2F6e8dc0304e6deeaaa601cbd77ac3909e.png
 category: talks
 ---
 I spoke at [PHP London](http://www.meetup.com/phplondon/events/70633952/) last night on "Deploying Distributed Systems". The slides are below.

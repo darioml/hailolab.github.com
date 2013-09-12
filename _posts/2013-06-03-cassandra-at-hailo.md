@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Cassandra at Hailo, C* Summit 2013
-author: Martin Sweeney
+title: Cassandra at Hailo
+tagline: How we use Cassandra, talk at C* Summit 2013
+github: sweeney
+image: https://0.gravatar.com/avatar/664e1c15953182b15c35d99d3b7b7f60?d=https%3A%2F%2Fidenticons.github.com%2Fb4affa4f6b27df047d63d66fe4ac5600.png
 category: talks
 ---
 Dave Gardner spoke at [Cassandra Summit 2013](http://www.datastax.com/company/news-and-events/events/cassandrasummit2013) in June. The video and slides are below.
