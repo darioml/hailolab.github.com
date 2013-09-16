@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Deploying Distributed Systems
 tagline: Talking at PHP London on how to deploy distributed systems
 github: mattheath

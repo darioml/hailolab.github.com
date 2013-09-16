@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Cassandra at Hailo
 tagline: How we use Cassandra, talk at C* Summit 2013
 github: sweeney
