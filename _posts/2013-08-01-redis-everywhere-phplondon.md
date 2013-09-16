@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Redis Everywhere
 github: ricardclau
 image: https://0.gravatar.com/avatar/2d5aaa5bfc55afb812af6693826e382b?d=https%3A%2F%2Fidenticons.github.com%2Fe17eb54606c860a9f71e131cc5c71da6.png

@@ -9,62 +9,65 @@ body {
 footer {
     width: 100%;
     padding-bottom: 20px;
-    position: fixed;
-    bottom: 0;
     text-align: center
 }
 
 #container {
     clear: both;
-    margin-left: 145px;
 }
 #content {
-    margin: 55px auto 0;
-    width: 800px;
+    max-width: 800px;   
+    padding: 0 10px;
 
-    .home-post {
+    .post {
         border-top: thin solid #eee;
-        padding-top: 60px;
-        margin-bottom: 60px;
-        img {
-            float:left;
-        }
-        h2 {
-            width: 400px;
-            font-weight: bold;
-            float:left;
-            color: #333;
-            margin: 0;
-            padding-left: 10px;
+        padding: 43px 0;
+
+        &.post-main {
+            h1 {
+                margin-bottom: 0;
+            }
+            .author-detail {
+                margin-top: 0;
+                margin-bottom: 30px;
+                color: #999;
+                font-weight: 100;
+                font-size: 16px;
+            }
         }
 
-        .author {
-            width: 620px;
-            padding-left: 12px;
-            color: #999;
-            font-weight: 100;
-            font-size: 16px;
-            float:left;
+        .author-image {
+            float: left;
+            max-width: 80px;
         }
-
-        .content {
-            width: 620px;
-            padding-left: 12px;
-            color: #555;
-            float:left;
-        }
-
-        div.readmore {
-            width: 720px;
-            font-size: 14px;
-            text-align: right;
+        .post-meta {
+            margin-left: 92px;
+            position: relative;
+            top: 0;
+            left: 0;
+            h2 {
+                font-weight: bold;
+                color: #333;
+                margin: 0;
+            }
+            .author {
+                color: #999;
+                font-weight: 100;
+                font-size: 16px;
+            }
+            .content {
+                color: #555;
+            }
+            p {
+                margin-bottom: 0;
+            }
         }
     }
 }
 
 nav.site-nav {
-    background: #fff;
-    box-shadow: inset -4px 0 5px -5px rgba(0,0,0,0.2);
+    //background: #fff;
+    //box-shadow: inset -4px 0 5px -5px rgba(0,0,0,0.2);
     ul {
         margin: 0;
         padding: 0;
@@ -112,3 +115,39 @@ nav.site-nav {
 }
 
 
+@media all and (min-width:500px) {
+    nav.site-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        min-width: 80px;
+
+        ul {
+            li {
+                display: block;
+                & > div {
+                    float: none;
+                }
+            }
+        }
+    }
+
+    #container {
+        margin-left: 80px;
+    }
+}
+
+
+@media all and (min-width:800px) {
+    nav.site-nav {
+        width: 20%
+    }
+
+    #container {
+        margin-left: 20%;
+    }
+    #content {
+        margin: auto auto;
+    }
+}

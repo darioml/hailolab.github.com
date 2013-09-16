@@ -4,11 +4,19 @@ layout: default
 
 <h1>Recent Posts</h1>
 {% for post in site.posts %}
-    <a href="{{ post.url }}"><div class="home-post">
-        <img src="{{ post.image }}"/>
-        <h2>{{ post.title }}</h2>
-        <div class="author">{{ post.github }} in talks</div>
-        <div class="content"><p>{{ post.tagline }}</p></div>
-        <br style="clear:both;">
-    </div></a>
+    <div class="post post-home">
+        <a href="{{ post.url }}">
+            <div class="post-container">
+                <div class="author-image">
+                    <img src="{{ post.image }}"/>
+                </div>
+                <div class="post-meta">
+                    <h2>{{ post.title }}</h2>
+                    <div class="author">{{ post.github }} in talks</div>
+                    <div class="content"><p>{{ post.tagline }}</p></div>
+                </div>
+                <br style="clear:both;">
+            </div>
+        </a>
+    </div>
 {% endfor %}

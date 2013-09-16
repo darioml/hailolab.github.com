@@ -9,81 +9,101 @@ body {
 footer {
   width: 100%;
   padding-bottom: 20px;
-  position: fixed;
-  bottom: 0;
   text-align: center; }
 
 #container {
-  clear: both;
-  margin-left: 145px; }
+  clear: both; }
 
 #content {
-  margin: 55px auto 0;
-  width: 800px; }
-  #content .home-post {
+  max-width: 800px;
+  padding: 0 10px; }
+  #content .post {
     border-top: thin solid #eee;
-    padding-top: 60px;
-    margin-bottom: 60px; }
-    #content .home-post img {
-      float: left; }
-    #content .home-post h2 {
-      width: 400px;
-      font-weight: bold;
-      float: left;
-      color: #333;
-      margin: 0;
-      padding-left: 10px; }
-    #content .home-post .author {
-      width: 620px;
-      padding-left: 12px;
+    padding: 43px 0; }
+    #content .post.post-main h1 {
+      margin-bottom: 0; }
+    #content .post.post-main .author-detail {
+      margin-top: 0;
+      margin-bottom: 30px;
       color: #999;
       font-weight: 100;
-      font-size: 16px;
-      float: left; }
-    #content .home-post .content {
-      width: 620px;
-      padding-left: 12px;
-      color: #555;
-      float: left; }
-    #content .home-post div.readmore {
-      width: 720px;
-      font-size: 14px;
-      text-align: right; }
+      font-size: 16px; }
+    #content .post .author-image {
+      float: left;
+      max-width: 80px; }
+    #content .post .post-meta {
+      margin-left: 92px;
+      position: relative;
+      top: 0;
+      left: 0; }
+      #content .post .post-meta h2 {
+        font-weight: bold;
+        color: #333;
+        margin: 0; }
+      #content .post .post-meta .author {
+        color: #999;
+        font-weight: 100;
+        font-size: 16px; }
+      #content .post .post-meta .content {
+        color: #555; }
+      #content .post .post-meta p {
+        margin-bottom: 0; }
 
-nav.site-nav {
-  background: #fff;
-  box-shadow: inset -4px 0 5px -5px rgba(0, 0, 0, 0.2); }
-  nav.site-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; }
+nav.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  nav.site-nav ul li {
+    display: inline; }
+    nav.site-nav ul li > div {
+      float: left;
+      padding-left: 15px;
+      padding-top: 10px;
+      width: 50px;
+      height: 50px; }
+    nav.site-nav ul li a.pure-button {
+      padding: 0;
+      width: 50px;
+      height: 50px;
+      font-size: 28px;
+      line-height: 50px;
+      transition: .1s linear; }
+      nav.site-nav ul li a.pure-button.home-button {
+        background-image: url("/assets/img/hailo_icon_Hailo+Icon.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 28px 28px; }
+        nav.site-nav ul li a.pure-button.home-button img {
+          max-width: 30px;
+          max-height: 30px; }
+      nav.site-nav ul li a.pure-button.sub-button:hover {
+        text-decoration: none;
+        background-image: none;
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        font-size: 40px; }
+
+@media all and (min-width: 500px) {
+  nav.site-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 80px; }
     nav.site-nav ul li {
-      display: inline; }
+      display: block; }
       nav.site-nav ul li > div {
-        float: left;
-        padding-left: 15px;
-        padding-top: 10px;
-        width: 50px;
-        height: 50px; }
-      nav.site-nav ul li a.pure-button {
-        padding: 0;
-        width: 50px;
-        height: 50px;
-        font-size: 28px;
-        line-height: 50px;
-        transition: .1s linear; }
-        nav.site-nav ul li a.pure-button.home-button {
-          background-image: url("/assets/img/hailo_icon_Hailo+Icon.svg");
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: 28px 28px; }
-          nav.site-nav ul li a.pure-button.home-button img {
-            max-width: 30px;
-            max-height: 30px; }
-        nav.site-nav ul li a.pure-button.sub-button:hover {
-          text-decoration: none;
-          background-image: none;
-          background: transparent;
-          box-shadow: none;
-          border: 0;
-          font-size: 40px; }
+        float: none; }
+
+  #container {
+    margin-left: 80px; } }
+@media all and (min-width: 800px) {
+  nav.site-nav {
+    width: 20%; }
+
+  #container {
+    margin-left: 20%; }
+
+  #content {
+    margin: auto auto; } }
