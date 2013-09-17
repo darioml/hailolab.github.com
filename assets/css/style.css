@@ -4,7 +4,9 @@ body, html {
   height: 100%; }
 
 body {
-  background: #fafafa; }
+  background: #fafafa;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
 
 footer {
   width: 100%;
@@ -26,6 +28,8 @@ footer {
         color: #999;
         font-weight: 100;
         font-size: 16px; }
+    #content .post.post-home > a {
+      text-decoration: none; }
     #content .post .author-image {
       float: left;
       max-width: 80px; }
@@ -35,7 +39,6 @@ footer {
       top: 0;
       left: 0; }
       #content .post .post-meta h2 {
-        font-weight: bold;
         color: #333;
         margin: 0; }
       #content .post .post-meta .author {
@@ -60,13 +63,19 @@ nav.site-nav ul {
       width: 50px;
       height: 50px; }
     nav.site-nav ul li a.pure-button {
+      background: #ffffff;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 0px;
       padding: 0;
+      position: relative;
       width: 50px;
       height: 50px;
       font-size: 28px;
       line-height: 50px;
-      transition: .1s linear; }
+      transition: .05s linear; }
       nav.site-nav ul li a.pure-button.home-button {
+        background: #e6e6e6;
+        cursor: default;
         background-image: url("/assets/img/hailo_icon_Hailo+Icon.svg");
         background-repeat: no-repeat;
         background-position: center center;
@@ -74,6 +83,8 @@ nav.site-nav ul {
         nav.site-nav ul li a.pure-button.home-button img {
           max-width: 30px;
           max-height: 30px; }
+        nav.site-nav ul li a.pure-button.home-button, nav.site-nav ul li a.pure-button.home-button:hover {
+          text-decoration: none; }
       nav.site-nav ul li a.pure-button.sub-button:hover {
         text-decoration: none;
         background-image: none;
@@ -93,6 +104,9 @@ nav.site-nav ul {
       display: block; }
       nav.site-nav ul li > div {
         float: none; }
+      nav.site-nav ul li a.pure-button.nav-hidden {
+        opacity: 0;
+        left: -70px; }
 
   #container {
     margin-left: 80px; } }
