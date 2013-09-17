@@ -15,19 +15,17 @@ footer {
   clear: both; }
 
 #content {
-  max-width: 800px;
+  max-width: 1200px;
   padding: 0 10px; }
   #content .post {
     border-top: thin solid #eee;
     padding: 43px 0; }
-    #content .post.post-main h1 {
-      margin-bottom: 0; }
-    #content .post.post-main .author-detail {
-      margin-top: 0;
-      margin-bottom: 30px;
-      color: #999;
-      font-weight: 100;
-      font-size: 16px; }
+    #content .post.post-main {
+      padding-top: 10px; }
+      #content .post.post-main .post-container .author {
+        color: #999;
+        font-weight: 100;
+        font-size: 16px; }
     #content .post .author-image {
       float: left;
       max-width: 80px; }
@@ -100,10 +98,10 @@ nav.site-nav ul {
     margin-left: 80px; } }
 @media all and (min-width: 800px) {
   nav.site-nav {
-    width: 20%; }
+    width: 15%; }
 
   #container {
-    margin-left: 20%; }
+    margin-left: 15%; }
 
   #content {
     margin: auto auto; } }

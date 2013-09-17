@@ -1,9 +1,18 @@
 ---
 layout: default
 ---
+
+<!--
 <div class="post post-main">
 <h1>{{page.title}}</h1>
 <p class="author-detail">{{page.github}} in {{page.category}}</p>
 
 {{content}}
+</div>!-->
+<h1>{{ page.title }}</h1>
+<div class="post post-main">
+    <div class="post-container">
+        <div class="author">{{ page.github }} in talks</div>
+    </div>
+    {{content}}
 </div>
