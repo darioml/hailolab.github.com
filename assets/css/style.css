@@ -4,14 +4,16 @@ body, html {
   height: 100%; }
 
 body {
-  background: #fafafa;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: #f0f0f0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Trade Gothic W01 Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300; }
 
 footer {
   width: 100%;
   padding-bottom: 20px;
-  text-align: center; }
+  text-align: center;
+  font-size: 20px;
+  color: #ccc; }
 
 #container {
   clear: both; }
@@ -20,8 +22,8 @@ footer {
   max-width: 1200px;
   padding: 0 10px; }
   #content .post {
-    border-top: thin solid #eee;
-    padding: 43px 0; }
+    border-top: thin solid #e9e9e9;
+    padding: 20px 0 25px; }
     #content .post.post-main {
       padding-top: 10px; }
       #content .post.post-main .post-container .author {
@@ -31,67 +33,71 @@ footer {
     #content .post.post-home > a {
       text-decoration: none; }
     #content .post .author-image {
-      float: left;
-      max-width: 80px; }
+      display: none; }
     #content .post .post-meta {
-      margin-left: 92px;
+      margin-left: 0px;
       position: relative;
       top: 0;
       left: 0; }
       #content .post .post-meta h2 {
-        color: #333;
+        font-size: 32px;
+        color: #2f6c88;
         margin: 0; }
       #content .post .post-meta .author {
-        color: #999;
+        color: #ccc;
         font-weight: 100;
         font-size: 16px; }
       #content .post .post-meta .content {
         color: #555; }
       #content .post .post-meta p {
+        margin-top: 11px;
         margin-bottom: 0; }
 
-nav.site-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-  nav.site-nav ul li {
-    display: inline; }
-    nav.site-nav ul li > div {
-      float: left;
-      padding-left: 15px;
-      padding-top: 10px;
-      width: 50px;
-      height: 50px; }
-    nav.site-nav ul li a.pure-button {
-      background: #ffffff;
-      background: rgba(255, 255, 255, 0);
-      border-radius: 0px;
-      padding: 0;
-      position: relative;
-      width: 50px;
-      height: 50px;
-      font-size: 28px;
-      line-height: 50px;
-      transition: .05s linear; }
-      nav.site-nav ul li a.pure-button.home-button {
-        background: #e6e6e6;
-        cursor: default;
-        background-image: url("/assets/img/hailo_icon_Hailo+Icon.svg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 28px 28px; }
-        nav.site-nav ul li a.pure-button.home-button img {
-          max-width: 30px;
-          max-height: 30px; }
-        nav.site-nav ul li a.pure-button.home-button, nav.site-nav ul li a.pure-button.home-button:hover {
-          text-decoration: none; }
-      nav.site-nav ul li a.pure-button.sub-button:hover {
-        text-decoration: none;
-        background-image: none;
-        background: transparent;
-        box-shadow: none;
-        border: 0;
-        font-size: 40px; }
+nav.site-nav .wrapper {
+  background: whitesmoke;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2); }
+  nav.site-nav .wrapper ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    nav.site-nav .wrapper ul li {
+      display: inline; }
+      nav.site-nav .wrapper ul li > div {
+        float: left;
+        padding-lreft: 15px;
+        width: 45px;
+        height: 50px; }
+      nav.site-nav .wrapper ul li a.pure-button {
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 0px;
+        padding: 0;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        line-height: 50px;
+        transition: .05s linear; }
+        nav.site-nav .wrapper ul li a.pure-button.home-button {
+          background: #fabb14;
+          cursor: default;
+          background-image: url("/assets/img/hailo_icon_Hailo+Icon.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 28px 28px; }
+          nav.site-nav .wrapper ul li a.pure-button.home-button img {
+            max-width: 30px;
+            max-height: 30px; }
+          nav.site-nav .wrapper ul li a.pure-button.home-button, nav.site-nav .wrapper ul li a.pure-button.home-button:hover {
+            text-decoration: none; }
+        nav.site-nav .wrapper ul li a.pure-button.sub-button:hover {
+          color: #459ec8;
+          text-decoration: none;
+          background-image: none;
+          background: transparent;
+          box-shadow: none;
+          border: 0;
+          font-size: 40px; }
 
 @media all and (min-width: 500px) {
   nav.site-nav {
@@ -99,20 +105,37 @@ nav.site-nav ul {
     top: 0;
     bottom: 0;
     left: 0;
-    min-width: 80px; }
-    nav.site-nav ul li {
-      display: block; }
-      nav.site-nav ul li > div {
-        float: none; }
-      nav.site-nav ul li a.pure-button.nav-hidden {
-        opacity: 0;
-        left: -70px; }
+    width: 62px; }
+    nav.site-nav .wrapper {
+      padding-top: 10px;
+      width: 62px;
+      padding-left: 10px;
+      height: 100%; }
+      nav.site-nav .wrapper ul li {
+        display: block; }
+        nav.site-nav .wrapper ul li > div {
+          width: 50px;
+          float: none;
+          padding-bottom: 10px; }
 
   #container {
-    margin-left: 80px; } }
+    margin-left: 80px; }
+
+  #content .post {
+    padding: 40px 0 45px; }
+    #content .post .author-image {
+      display: block;
+      float: left;
+      max-width: 80px;
+      margin-top: 7px; }
+    #content .post .post-meta {
+      margin-left: 92px; } }
 @media all and (min-width: 800px) {
   nav.site-nav {
     width: 15%; }
+    nav.site-nav .wrapper ul li a.pure-button.nav-hidden {
+      opacity: 0;
+      left: -70px; }
 
   #container {
     margin-left: 15%; }
