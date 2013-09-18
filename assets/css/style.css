@@ -133,9 +133,6 @@ nav.site-nav .wrapper {
 @media all and (min-width: 800px) {
   nav.site-nav {
     width: 15%; }
-    nav.site-nav .wrapper ul li a.pure-button.nav-hidden {
-      opacity: 0;
-      left: -70px; }
 
   #container {
     margin-left: 15%; }
