@@ -77,7 +77,8 @@ nav.site-nav .wrapper {
         height: 50px;
         font-size: 28px;
         line-height: 50px;
-        transition: .05s linear; }
+        transition: .05s linear;
+        -webkit-transition: .05s linear; }
         nav.site-nav .wrapper ul li a.pure-button.home-button {
           background: #fabb14;
           background-image: url("/assets/img/hailo_icon_Hailo+Icon.svg");
