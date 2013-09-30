@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1>Hailo<b>Labs</b></h1>
+{% for post in site.posts %}
+    <div class="post post-home">
+        <a href="{{ post.url }}">
+            <div class="post-container">
+                <div class="author-image">
+                    <img src="{{ post.image }}"/>
+                </div>
+                <div class="post-meta">
+                    <h2>{{ post.title }}</h2>
+                    <div class="author">{{ post.github }} in talks</div>
+                    <div class="content"><p>{{ post.tagline }}</p></div>
+                </div>
+            </div>
+        </a>
+    </div>
+{% endfor %}
